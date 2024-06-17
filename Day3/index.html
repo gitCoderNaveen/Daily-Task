@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullstacker's Hub Day3</title>
+</head>
+
+<body>
+    <!-- Today we going to learn about forms & input -->
+    <header>
+        <h3>Fullsatcker's Hub</h3>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article>
+            <section>
+                <h2>WE have going to seen about Form & inputs in html</h2>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you</p>
+
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Enter your Name">
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="your last Name">
+                        </p>
+                        <p>
+                            <label for="passWord">Password</label>
+                            <input type="password" name="passWord" id="passWord">
+                        </p>
+                        <p>
+                            <label for="phone">Phone No: </label>
+                            <input type="tel" name="phone" id="phone" placeholder="999-999-9999"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        </p>
+                        <p>
+                            <label for="decade">Fav Decade:</label>
+                            <input type="number" name="decade" id="decade" min="1930" max="2020" step="10" value="1980">
+                        </p>
+                        <p>
+                            <label for="coffee">Fav Coffee: </label>
+                            <select name="coffee" id="coffee">
+                                <optgroup label="Coffees">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="black Coffee">Black Coffee</option>
+                                </optgroup>
+                                <optgroup label="others">
+                                    <option value="black tea" selected>Black Tea</option>
+                                    <option value="Horlick">Horlicks</option>
+                                    <option value="boost">Boost</option>
+                                </optgroup>
+                            </select>
+                        </p>
+
+                        <!-- <label for="coffee">Fav Coffee: </label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                    </datalist> -->
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <form action="#">
+                    <fieldset>
+                        <legend>What is your fav food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="Pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>                        
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <h2>&lt;&lt;&lt; &nbsp;&nbsp; &copy; Fullstacker's Hub 2024 &nbsp;&nbsp; &gt;&gt;&gt;</h2>
+    </footer>
+</body>
+
+</html>

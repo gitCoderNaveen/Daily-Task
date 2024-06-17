@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.offscreen{
+    position: absolute;
+    left:-100000px;
+}
+
+body{
+    font-family:sans-serif;
+    min-height:100vh;
+    background-color: aliceblue;
+    background-image: linear-gradient(to right,rgb(9, 111, 194),purple, #fff);
+}
+.container{
+    background-color:rgb(251, 210, 157);
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size:cover;    
+}
+
+.hero{
+    border-bottom:2px solid black;
+    padding:20px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgba(142, 128, 21, 0.422);
+}
+
+.h1{
+    font-size: 500%;
+}
+.profile-pic-figure{
+    width:30%;
+}
+
+.profile-pic-figure img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+
+.example{
+    margin-top:1rem;
+    padding-left:20px;
+    border: 1px solid red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+}
+.clip{
+    font-weight:800;
+    font-size:18rem;
+    text-align:center;
+    background-image:url("background1.jpg");
+    background-size: 100%;
+    text-transform: uppercase;
+
+    -webkit-background-clip:text;
+    color: transparent;
+
+}

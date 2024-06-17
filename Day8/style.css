@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    margin: 0.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+nav{
+    border: 2px solid black;
+    border-radius: 2rem;
+    margin:0 auto 1rem;
+    max-width: 600px;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+h2{
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0;
+}
+ul{
+    list-style-type: none;
+}
+li a{
+    display: block;
+}
+li a, li a:visited{
+    text-decoration: none; 
+    color:black;   
+}
+
+li a:hover, li a:focus{
+    background: black;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
+.btn1 a{
+    text-decoration: none;
+    font-size: large;
+    padding: 5px;
+    color: black;
+}
+main{
+    background-color: aqua;
+    width: 50%;
+}
+p{
+    font-size: 2rem;
+    background-color: lightblue;
+    margin: 3px;
+}
+.opposite{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+.nav{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: black;
+    margin: 0;
+}
+.navItem {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+.navItem, .navLink{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.navItem .navLink:hover{
+    text-decoration: underline;
+}
