@@ -23,10 +23,46 @@ main{
     gap:1rem;
 }
 
-div{
+.Box{
     width:200px;
     height:200px;
     border: 1px solid #000;
     display: grid;
     place-content:center;
+}
+
+.Box:first-child{
+    background-color:dodgerblue;
+    /* transform: translateX(-50px) */
+    /* transform:rotate(180deg); */
+    /* transform:scaleX(120%); */
+    /* transform:skewY(-10deg); */
+}
+.Box:nth-child(2){
+    background-color:yellow;
+    /* transform:translateY(-2rem); */
+    /* transform:rotate(30deg); */
+    /* transform:scaleY(150%); */
+    /* transform:skewX(10deg); */
+
+}
+.Box:last-child{
+    background-color:limegreen;
+    /* transform:translate(100%, -2rem); */
+    /* transform:rotate(60deg); */
+    /* transform:scale(120%, 120%); */
+    /* transform:skew(-10deg, -10deg); */
+}
+
+.Box:hover{
+    background-color:midnightblue;
+    /* transition-property:background-color, transform;
+    transition-duration:2s, 3s;
+    transition-delay:0.5s; */
+    transition-timing-function:linear;
+    transition:all 2s ease-in-out 0.5s;
+}
+
+.Box:last-child:hover{
+    transform:rotate(180deg);
 }
